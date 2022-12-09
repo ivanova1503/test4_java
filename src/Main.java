@@ -29,6 +29,10 @@ public class Main {
                     System.out.println("Не распаковывай это!");
                     System.out.println("Введите ответ:");
                     otvet = scanner.nextLine();
+                    while (otvet.equalsIgnoreCase("Подсказка")) {
+                        System.out.println("Введите ответ:");
+                        otvet = scanner.nextLine();
+                    }
                     if (otvet.equalsIgnoreCase("Заархивированный вирус")) {
                         System.out.println("Правильно!");
                     } else {
